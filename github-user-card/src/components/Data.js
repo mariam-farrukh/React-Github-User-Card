@@ -6,10 +6,11 @@ export default class Data extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            userData: ""
+            userData: "",
+            followersData: ["Loading"]
         };
         
-    }
+    };
 
     componentDidMount() {
         const userData = axios.get("https://api.github.com/users/mariam-farrukh", {})
@@ -19,14 +20,25 @@ export default class Data extends React.Component {
         .catch(err => {
             console.log('Error with axios in CDM', err);
         });
-    }
+
+        const userFollowersData = axios.get("https://api.github.com/users/mariam-farrukh/followers")
+        .then(res => {
+            this.setState({followersData: res.data});
+        })
+        .catch(err => {
+            console.log('Error with followers axios in CDM', err);
+        });
+    };
 
     render() {
         
         return (
             <div>
                 <User user={this.state.userData}/>
+                {this.state.followersData.map(follower => (
+                    <UserFollowers follower={follower} />
+                ))}
             </div>
-        )
-    }
+        );
+    };
 }
