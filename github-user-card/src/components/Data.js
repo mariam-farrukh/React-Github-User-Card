@@ -9,7 +9,7 @@ export default class Data extends React.Component {
         super(props);
         this.state = {
             userData: "",
-            followersData: ["Loading"]
+            followersData: [""]
         };
         
     };
