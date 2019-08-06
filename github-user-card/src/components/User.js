@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card, Image } from "./StyledComponents";
 
 export default class User extends React.Component {
     constructor(props) {
@@ -7,9 +8,9 @@ export default class User extends React.Component {
 
     render () {
         return (
-            <div className="card">
-                <img
-                    width="300"
+            <Card>
+                <Image
+                    
                     src = {this.props.user.avatar_url}
                     alt = "User Image"
                 />
@@ -19,7 +20,7 @@ export default class User extends React.Component {
                     <p>Location: {this.props.user.location}</p>
                     <p>Bio: {this.props.user.bio}</p>
                 </div>
-            </div>
+            </Card>
         );
     }
 }

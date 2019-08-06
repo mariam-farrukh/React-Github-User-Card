@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import User from './User.js';
 import UserFollowers from './UserFollowers.js';
+import { Header3 } from "./StyledComponents";
 
 export default class Data extends React.Component {
     constructor(props) {
@@ -36,7 +37,7 @@ export default class Data extends React.Component {
         return (
             <div>
                 <User user={this.state.userData}/>
-                <h3>Followers:</h3>
+                <Header3>Followers:</Header3>
                 {this.state.followersData.map(follower => (
                     <UserFollowers follower={follower} />
                 ))}

@@ -29,9 +29,9 @@ Follow these steps for completing your project.
 
 ## Minimum Viable Product
 
-- [ ] Fetch data from the Github API for a Github user
-- [ ] Display the user data on the DOM
-- [ ] Use class components when you need to hold any state or use any lifecycle methods
+- [X] Fetch data from the Github API for a Github user
+- [X] Display the user data on the DOM
+- [X] Use class components when you need to hold any state or use any lifecycle methods
 
 ## Planning your App
 
@@ -43,21 +43,21 @@ When you have those completed, you're ready to start coding!
 
 ## STEP 1 - Fetch the User Data
 
-- When your component mounts, send a GET request to the following URL (replacing the palceholder with your Github name):
+-[X] When your component mounts, send a GET request to the following URL (replacing the palceholder with your Github name):
   - https://api.github.com/users/<your name>
-- After you fetch your data, set it to state
+-[X] After you fetch your data, set it to state
 
 ## STEP 2 - Display the User Data
 
-- Pass the data to the component that will be displaying it
-- Build out a user card using the data that the Github API returns to you
-  - You may reference your old project for this, or you may wish to build this from scratch yourself
+-[X] Pass the data to the component that will be displaying it
+-[X] Build out a user card using the data that the Github API returns to you
+  -[X] You may reference your old project for this, or you may wish to build this from scratch yourself
 
 ## STEP 3 - Fetch the User's Followers
 
-- When your component mounts, you will also fetch the user's followers using this endpoint:
+-[X] When your component mounts, you will also fetch the user's followers using this endpoint:
   https://api.github.com/users/<Your github name>/followers
-- Set that data to state as well, and display the data in your app
+-[X] Set that data to state as well, and display the data in your app
 
 ## STEP 4 - Style the User Card
 
