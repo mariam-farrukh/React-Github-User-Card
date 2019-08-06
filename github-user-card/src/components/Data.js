@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import User from './User.js'
 
 export default class Data extends React.Component {
     constructor() {
