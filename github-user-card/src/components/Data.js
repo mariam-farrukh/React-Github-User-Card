@@ -8,6 +8,7 @@ export default class Data extends React.Component {
         this.state = {
             userData: ""
         };
+        
     }
 
     componentDidMount() {
@@ -21,6 +22,7 @@ export default class Data extends React.Component {
     }
 
     render() {
+        
         return (
             <div>
                 <User user={this.state.userData}/>

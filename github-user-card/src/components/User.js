@@ -9,12 +9,14 @@ export default class User extends React.Component {
         return (
             <div className="userCard">
                 <img
-                    src = {this.props.user.avatart_url}
+                    width="200"
+                    src = {this.props.user.avatar_url}
                     alt = "User Image"
                 />
                 <div>
-                    <h2>{this.props.user.login}</h2>
-                    <p>{this.props.user.bio}</p>
+                    <h2>{this.props.user.name}</h2>
+                    <p>Location: {this.props.user.location}</p>
+                    <p>Bio: {this.props.user.bio}</p>
                 </div>
             </div>
         );
